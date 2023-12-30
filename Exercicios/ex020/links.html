@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        
+        
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {                 /* link quando é visitado*/
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;         /* Sublinhar texto quando passa o mouse*/
+        }
+
+        a:active {
+            color: yellow;              /* link ativo, quando clica no link  */
+        }
+
+        .especial {
+            background-color: rgb(233, 99, 99);    /* Para deixar com fundo vermelho no escrito "Canal do Youtube"*/
+        }
+        .especial::before {                 /* Quando definir que um link é mais importante*/
+            content: '⇒ ';
+        }
+        .especial::after {
+            content: '⇐	';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/@ALEXTUTORIAIS/videos" target="_blank" class="especial">Canal do Youtube</a></li>   <!--target="_blank"     é para abrir o link em outra pagina-->
+        <li><a href="https://www.alextutoriais.com.br">Site do Canal</a></li>
+        <li><a href="https://www.instagram.com/alextutoriais/">Meu Instagram</a></li>
+
+    </ul>
+</body>
+</html>
