@@ -28,14 +28,27 @@
         th.destaque  {
             background-color: yellow;
         }
+
+        col.cnome {
+            background-color: rgb(255, 0, 0);
+        }
+
+        col.cgrupo {
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício da Tabela</h1>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+            
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
-            <th scope="col" >Nome</th>
+            <th scope="col" >Nome</th>          
             <th scope="col">Sexo</th>
             <th scope="col">Idade</th>
             <th scope="col">Profissão</th>
