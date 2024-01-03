@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Estilo para Telas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgba(8, 236, 236, 0.26);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none;  /*Para tira a bolinha no inicio do menu*/
+    background-color: rgba(128, 128, 128, 0.418);
+}
+
+menu li {
+    color: white;
+    background-color: rgba(29, 29, 29, 0.603);
+    display: inline-block; /*Para o menu fica do lado um do outro*/
+    padding: 10px;          /*Para o menu fica mais grande*/
+}
+
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+}

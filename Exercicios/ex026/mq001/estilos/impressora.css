@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Estilos para impressoras*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;  /* Para não mostrar o menu quando imprimir*/
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site www.alextutoriais.com.br';
+}
+
+article {
+    width: 100%;
+}
